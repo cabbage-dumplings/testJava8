@@ -17,6 +17,7 @@ public class TestEvalute {
             System.out.println(person.getAge()+" "+person.getSalary()+" "+person.getUsername());
         }
         System.out.println("aa");
+        System.out.println("bb");
         int a = 1;
         int b = 2;
         System.out.println(add(a,b));
