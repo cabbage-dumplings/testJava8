@@ -5,15 +5,13 @@ package com.wk.test;
  * @create 2020-07-24-22:41
  */
 public class Person{
-    @Override
-    public String toString() {
-        return "Person{" +
-                "salary=" + salary +
-                ", age=" + age +
-                ", username='" + username + '\'' +
-                '}';
+
+    public Person(Integer salary) {
+        this.salary = salary;
     }
 
+    public Person() {
+    }
 
     Person(Integer salary, Integer age) {
         this.salary = salary;
@@ -44,6 +42,16 @@ public class Person{
 
     private Integer salary;
     private Integer age;
+    private int socre;
+
+    public int getSocre() {
+        return socre;
+    }
+
+    public void setSocre(int socre) {
+        this.socre = socre;
+    }
+
     private String username;
 
     public String getUsername() {
@@ -52,5 +60,15 @@ public class Person{
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "salary=" + salary +
+                ", age=" + age +
+                ", socre=" + socre +
+                ", username='" + username + '\'' +
+                '}';
     }
 }
